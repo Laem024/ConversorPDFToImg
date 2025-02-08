@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir PDFs a JPGs</title>
+</head>
+<body>
+    <h2>Subir PDFs para convertirlos a JPG</h2>
+    <form action="http://localhost:8080/pdf/multi/toimg/jpg" method="POST" enctype="multipart/form-data">
+        <input type="file" name="files" accept="application/pdf" multiple required>
+        <button type="submit">Convertir a JPG</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Subir PDFs para convertirlos a PNG</h2>
+    <form action="http://localhost:8080/pdf/multi/toimg/png" method="POST" enctype="multipart/form-data">
+        <input type="file" name="files" accept="application/pdf" multiple required>
+        <button type="submit">Convertir a PNG</button>
+    </form>
+</body>
+</html>
